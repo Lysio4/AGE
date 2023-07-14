@@ -3304,11 +3304,17 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},*/
 	zacian: {
 		inherit: true,
-		baseStats: {hp: 92, atk: 120, def: 115, spa: 80, spd: 115, spe: 138},
+		abilities: {0: "Justified"},
+		baseStats: {hp: 92, atk: 120, def: 115, spa: 80, spd: 115, spe: 128},
 	},
 	zaciancrowned: {
 		inherit: true,
 		baseStats: {hp: 92, atk: 150, def: 115, spa: 100, spd: 115, spe: 148},
+	},
+	zamazenta: {
+		inherit: true,
+		abilities: {0: "Justified"},
+		baseStats: {hp: 92, atk: 120, def: 115, spa: 80, spd: 115, spe: 128},
 	},
 	zamazentacrowned: {
 		inherit: true,

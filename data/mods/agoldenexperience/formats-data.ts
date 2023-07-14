@@ -1277,7 +1277,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	magcargomega: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	swinub: {
@@ -1539,7 +1539,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	breloom: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	slakoth: {
@@ -1756,7 +1756,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	cacturnemegax: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DOU",
 	},
 	cacturnemegayday: {
@@ -1908,7 +1908,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	glaliemega: {
-		tier: "OU",
+		tier: "UUBL",
 		doublesTier: "DUU",
 	},
 	froslass: {
@@ -2489,7 +2489,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	emboargalar: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	oshawott: {
@@ -4334,16 +4334,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	zacian: {
-		tier: "Uber",
-		doublesTier: "DUber",
+		tier: "OU",
+		doublesTier: "DOU",
 	},
 	zaciancrowned: {
 		tier: "Uber",
 		doublesTier: "DUber",
 	},
 	zamazenta: {
-		tier: "Uber",
-		doublesTier: "DUber",
+		tier: "OU",
+		doublesTier: "DOU",
 	},
 	zamazentacrowned: {
 		tier: "Uber",
@@ -4444,7 +4444,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	overqwil: {
 		gen: 8,
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	enamorus: {
@@ -4581,7 +4581,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		//natDexTier: "RU",
 	},
 	ironjugulis: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DUU",
 		//natDexTier: "RU",
 	},
@@ -4732,7 +4732,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	snobberaven: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	fiyounfly: {
@@ -4776,7 +4776,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	sharkutkie: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	mercurino: {
@@ -4831,11 +4831,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	mystao: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	hopkineye: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	harvesking: {
@@ -4884,7 +4884,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	solens: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	snolbom: {
@@ -4912,7 +4912,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "NFE",
 	},
 	leechuption: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DOU",
 	},	
 	delistmas: {
@@ -5001,7 +5001,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DUU",
 	},
 	annoyog: {
-		tier: "OU",
+		tier: "UU",
 		doublesTier: "DOU",
 	},
 	raticket: {

@@ -361,6 +361,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'dragalge').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'araquanid').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'grapploct').learnset.highwater = ['8T'];
+    this.modData('Learnsets', 'medidragon').learnset.highwater = ['8T'];
 
     // parallelcircuit 
     this.modData('Learnsets', 'ironhands').learnset.parallelcircuit = ['8L1'];
@@ -564,6 +565,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'mimikyu').learnset.punishingblow = ['8L1'];
     this.modData('Learnsets', 'paranormear').learnset.punishingblow = ['8L1'];
     this.modData('Learnsets', 'slendawful').learnset.punishingblow = ['8L1'];
+    this.modData('Learnsets', 'baskiron').learnset.punishingblow = ['8L1'];
 
     // condensate 
     this.modData('Learnsets', 'ninetalesalola').learnset.condensate = ['8L1'];
@@ -1321,6 +1323,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'duraludon').learnset.fireblast = ['8L1'];
     this.modData('Learnsets', 'duraludon').learnset.icebeam = ['8L1'];
     this.modData('Learnsets', 'duraludon').learnset.flamethrower = ['8L1'];
+    this.modData('Learnsets', 'zacian').learnset.poisonjab = ['8L1'];
     this.modData('Learnsets', 'zamazenta').learnset.bodypress = ['8L1'];
     this.modData('Learnsets', 'zamazenta').learnset.moonlight = ['8L1'];
     this.modData('Learnsets', 'zamazenta').learnset.bulkup = ['8L1'];
