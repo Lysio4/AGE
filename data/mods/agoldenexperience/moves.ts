@@ -3109,8 +3109,10 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		pp: 5,
 		priority: 0,
 		flags: {snatch: 1, dance: 1},
-		boosts: {
-			spa: 1,
+		self: {
+			boosts: {
+				spa: 1,
+			},
 		},
 		weather: 'RainDance',
 		secondary: null,
