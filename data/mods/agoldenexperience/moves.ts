@@ -443,27 +443,27 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		zMove: {boost: {def: 1}},
 		contestType: "Tough",
 	},*/
-	rolledballed: {
-		num: -13,
-		accuracy: 90,
-		basePower: 35,
-		category: "Physical",
-    	shortDesc: "Hits twice. Has a 10% chance to lower the target's Def after each hit.",
-		name: "Rolled Balled",
-		pp: 10,
-		priority: 0,
-		flags: {protect: 1, mirror: 1},
-		multihit: 2,
-		secondary: {
-			chance: 10,
-			boosts: {
-				def: -1,
-			},
-		},
-		target: "normal",
-		type: "Ice",
-		contestType: "Cool",
-	},
+	// rolledballed: { //removed 
+	// 	num: -13,
+	// 	accuracy: 90,
+	// 	basePower: 35,
+	// 	category: "Physical",
+    // 	shortDesc: "Hits twice. Has a 10% chance to lower the target's Def after each hit.",
+	// 	name: "Rolled Balled",
+	// 	pp: 10,
+	// 	priority: 0,
+	// 	flags: {protect: 1, mirror: 1},
+	// 	multihit: 2,
+	// 	secondary: {
+	// 		chance: 10,
+	// 		boosts: {
+	// 			def: -1,
+	// 		},
+	// 	},
+	// 	target: "normal",
+	// 	type: "Ice",
+	// 	contestType: "Cool",
+	// },
 	goldenexperience: {
 		num: -14,
 		accuracy: 100,

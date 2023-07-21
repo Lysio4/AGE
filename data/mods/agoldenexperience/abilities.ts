@@ -160,24 +160,24 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 4.5,
 		num: -7,
 	},
-	reflex: {
-		onFoeTryMove(target, source, move) {
-			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
-			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
-				return;
-			}
+	// reflex: { //removed
+	// 	onFoeTryMove(target, source, move) {
+	// 		const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
+	// 		if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
+	// 			return;
+	// 		}
 
-			const dazzlingHolder = this.effectData.target;
-			if ((source.side === dazzlingHolder.side || move.target === 'all') && move.priority > 0.1) {
-				this.attrLastMove('[still]');
-				this.add('cant', dazzlingHolder, 'ability: Reflex', move, '[of] ' + target);
-				return false;
-			}
-		},
-		name: "Reflex",
-		rating: 2.5,
-		num: -8,
-	},
+	// 		const dazzlingHolder = this.effectData.target;
+	// 		if ((source.side === dazzlingHolder.side || move.target === 'all') && move.priority > 0.1) {
+	// 			this.attrLastMove('[still]');
+	// 			this.add('cant', dazzlingHolder, 'ability: Reflex', move, '[of] ' + target);
+	// 			return false;
+	// 		}
+	// 	},
+	// 	name: "Reflex",
+	// 	rating: 2.5,
+	// 	num: -8,
+	// },
 	perforating: {
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
@@ -316,26 +316,26 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 4,
 		num: -16,
 	},*/
-	mistymountain: {
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
-			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-			];
-			if (move.type === 'Rock' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
-				move.type = 'Ice';
-				move.refrigerateBoosted = true;
-			}
-		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
-		},
-		name: "Misty Mountain",
-		shortDesc: "This Pokemon's Rock-type moves become Ice-type and have 1.2x power.",
-		rating: 4,
-		num: -17,
-	},
+	// mistymountain: { //unused due to deleted Fakemons
+	// 	onModifyTypePriority: -1,
+	// 	onModifyType(move, pokemon) {
+	// 		const noModifyType = [
+	// 			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+	// 		];
+	// 		if (move.type === 'Rock' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+	// 			move.type = 'Ice';
+	// 			move.refrigerateBoosted = true;
+	// 		}
+	// 	},
+	// 	onBasePowerPriority: 23,
+	// 	onBasePower(basePower, pokemon, target, move) {
+	// 		if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
+	// 	},
+	// 	name: "Misty Mountain",
+	// 	shortDesc: "This Pokemon's Rock-type moves become Ice-type and have 1.2x power.",
+	// 	rating: 4,
+	// 	num: -17,
+	// },
 	coldwind: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
@@ -1760,8 +1760,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		num: 23,
 	},
 	sandveil: {
-		desc: "If Sandstorm is active, this Pokemon's defence is multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
-		shortDesc: "If Sandstorm is active, this Pokemon's defence is 1.3x; immunity to Sandstorm.",
+		desc: "If Sandstorm is active, this Pokemon's defense is multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+		shortDesc: "If Sandstorm is active, this Pokemon's defense is 1.3x; immunity to Sandstorm.",
 		onImmunity(type, pokemon) {
 			if (type === 'sandstorm') return false;
 		},
@@ -1775,8 +1775,8 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		num: 146,
 	},
 	snowcloak: {
-		desc: "If Hail is active, this Pokemon's defence is multiplied by 1.3. This Pokemon takes no damage from Hail.",
-		shortDesc: "If Hail is active, this Pokemon's defence is 1.3x; immunity to Hail.",
+		desc: "If Hail is active, this Pokemon's defense is multiplied by 1.3. This Pokemon takes no damage from Hail.",
+		shortDesc: "If Hail is active, this Pokemon's defense is 1.3x; immunity to Hail.",
 		onImmunity(type, pokemon) {
 			if (type === 'hail') return false;
 		},
@@ -2554,6 +2554,41 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 3,
 		num: -46,
 	},
+	icescales: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.category === 'Special' || move.typeMod > 0) {
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Ice Scales",
+		shortDesc: "This Pokemon receives 1/2 damage from special attacks, as well as super effective attacks.",
+		desc: "This Pokemon receives 1/2 damage from special attacks, as well as super effective attacks.",
+		rating: 4,
+		num: 246,
+	},
+	strongwill: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (move.category === 'Special') {
+				return this.chainModify(0.5);
+			}
+		},
+		name: "Strong Will",
+		shortDesc: "This Pokemon receives 1/2 damage from special attacks.",
+		desc: "This Pokemon receives 1/2 damage from special attacks.",
+		rating: 4,
+		num: -1246,
+	},
+	// dodge: { //WIP
+	// 	shortDesc: "This Pokemon uses its Speed in damage calculation.",
+	// 	name: "Dodge",
+	// 	onModifyMove(move, attacker) {
+	// 		if (move.category === 'Special') {
+	// 			useSourceSpeedAsDefensive = true;
+	// 		}
+	// 	},
+	// 	rating: 3.5,
+	// 	num: -9148,
+	// },
 	//Gen 9 additions
 	sharpness: {
 		shortDesc: "Boosts the power of sword, cut, slash, and blade moves by 1.3x",
