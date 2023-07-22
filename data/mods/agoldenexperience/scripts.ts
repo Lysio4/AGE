@@ -16,9 +16,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     else if (item.name === "Zoroarkite" && pokemon.baseSpecies.name === "Zoroark-Hisui") {
 			return null;
 		}
-    else if (item.name === "Magcargonite" && pokemon.baseSpecies.name === "Magcargo-Sinnoh") {
-			return null;
-		}
     else if (item.name === "Scizorite" && pokemon.baseSpecies.name === "Scizor") {
 			return "Scizor-Mega";
 		}
@@ -241,7 +238,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'abomasnow').learnset.mountaingale = ['8L1'];
     this.modData('Learnsets', 'crabominable').learnset.mountaingale = ['8L1'];
     this.modData('Learnsets', 'beartic').learnset.mountaingale = ['8L1'];
-    this.modData('Learnsets', 'snobawcus').learnset.mountaingale = ['8L1'];
     this.modData('Learnsets', 'glastrier').learnset.mountaingale = ['8L1'];
     this.modData('Learnsets', 'mamoswine').learnset.mountaingale = ['8L1'];
 
@@ -371,7 +367,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'thundurus').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'morpeko').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'zeraora').learnset.parallelcircuit = ['8L1'];
-    this.modData('Learnsets', 'jaboraishi').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'pincurchin').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'zebstrika').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'pikachu').learnset.parallelcircuit = ['8L1'];
