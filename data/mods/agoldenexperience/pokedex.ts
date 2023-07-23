@@ -1039,7 +1039,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	delcatty: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 55, def: 95, spa: 85, spd: 95, spe: 90},
-		abilities: {0: "Unaware", 1: "Normalize", H: "Unimpressed"},
+		abilities: {0: "Unimpressed", 1: "Normalize", H: "Wonder Skin"},
 	},
 	sableye: {
 		inherit: true,

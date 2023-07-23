@@ -983,7 +983,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	},
 	explosive: {
 		desc: "This Pokémon does not suffer the drawbacks of recoil moves and sacrificial moves.",
-		shortDesc: "Ignores recoil and self-KO effects of that move.",
+		shortDesc: "Ignores recoil and self-KO effects of its moves.",
 		onModifyMove(move) {
 			if (move.recoil || move.mindBlownRecoil || (move.selfdestruct && move.selfdestruct === 'always')) {
 				this.effectData.target.addVolatile('implode');
@@ -2589,6 +2589,19 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		},
 		rating: 3.5,
 		num: -9148,
+	},
+	wonderskin: {
+		onTryHit(target, source, move) {
+			if (move.category === 'Status' && target !== source) {
+				this.add('-immune', target, '[from] ability: Wonder Skin');
+				return null;
+			}
+		},
+		isBreakable: true,
+		name: "Wonder Skin",
+		shortDesc: "This Pokemon is immune to Status moves.",
+		rating: 5,
+		num: 147,
 	},
 	//Gen 9 additions
 	sharpness: {
