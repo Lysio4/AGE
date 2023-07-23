@@ -362,7 +362,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		onSourceHit(target, source, move) {
 			if (!move || !target) return;
 			if (move.flags['dancer']) {
-				this.boost({spe: 1}, source);
+				this.boost({ spe: 1 }, source);
 			}
 		},
 		name: "Mad Dancer",
@@ -1552,7 +1552,7 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		onModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).crit) {
 				this.debug('Old School boost');
-				return this.chainModify(2/1.5);
+				return this.chainModify(2 / 1.5);
 			}
 		},
 		rating: 3.5,
@@ -2578,17 +2578,18 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 4,
 		num: -1246,
 	},
-	// dodge: { //WIP
-	// 	shortDesc: "This Pokemon uses its Speed in damage calculation.",
-	// 	name: "Dodge",
-	// 	onModifyMove(move, attacker) {
-	// 		if (move.category === 'Special') {
-	// 			useSourceSpeedAsDefensive = true;
-	// 		}
-	// 	},
-	// 	rating: 3.5,
-	// 	num: -9148,
-	// },
+	dodge: { //tmp
+		shortDesc: "This Pokemon uses its Speed in damage calculation.",
+		name: "Dodge",
+		onFoeBeforeMovePriority: 6,
+		onFoeBeforeMove(attacker, defender, move) {
+			if (target === this.effectState.target && move.category !== "Status") {
+				move.overrideDefensiveStat = 'spe';
+			}
+		},
+		rating: 3.5,
+		num: -9148,
+	},
 	//Gen 9 additions
 	sharpness: {
 		shortDesc: "Boosts the power of sword, cut, slash, and blade moves by 1.3x",

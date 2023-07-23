@@ -446,7 +446,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Paldea-Combat",
 		types: ["Fighting"],
 		gender: "M",
-		baseStats: {hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100},
+		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
 		abilities: {0: "Intimidate", 1: "Anger Point", H: "Cud Chew"},
 		heightm: 1.4,
 		weightkg: 88.4,
@@ -460,7 +460,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Paldea-Blaze",
 		types: ["Fighting", "Fire"],
 		gender: "M",
-		baseStats: {hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100},
+		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
 		abilities: {0: "Intimidate", 1: "Anger Point", H: "Cud Chew"},
 		heightm: 1.4,
 		weightkg: 88.4,
@@ -474,7 +474,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Paldea-Aqua",
 		types: ["Fighting", "Water"],
 		gender: "M",
-		baseStats: {hp: 75, atk: 110, def: 105, spa: 30, spd: 70, spe: 100},
+		baseStats: {hp: 75, atk: 120, def: 115, spa: 30, spd: 70, spe: 100},
 		abilities: {0: "Intimidate", 1: "Anger Point", H: "Cud Chew"},
 		heightm: 1.4,
 		weightkg: 88.4,
@@ -1023,6 +1023,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 75, atk: 60, def: 62, spa: 100, spd: 82, spe: 96},
 	},
+	ninjask: {
+		inherit: true,
+		abilities: {0: "Speed Boost", H: "Dodge"},
+	},
 	exploud: {
 		inherit: true,
 		baseStats: {hp: 104, atk: 70, def: 63, spa: 112, spd: 73, spe: 68},
@@ -1133,9 +1137,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 80, atk: 45, def: 90, spa: 90, spd: 110, spe: 65},
 	},
+	vibrava: {
+		inherit: true,
+		abilities: {0: "Levitate", 1:"Arena Trap", H: "Sand Stream"},
+	},
 	flygon: {
 		inherit: true,
-		abilities: {0: "Levitate", H:"Sand Stream"},
+		abilities: {0: "Levitate", 1:"Arena Trap", H: "Sand Stream"},
 		otherFormes: ["Flygon-Mega"],
         formeOrder: ["Flygon", "Flygon-Mega"],
 	},
@@ -1153,8 +1161,13 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		eggGroups: ["Bug", "Dragon"],
         requiredItem: "Flygonite",
 	},
+	cacnea: {
+		inherit: true,
+		abilities: {0: "Sand Veil", 1:"Arena Trap", H: "Water Absorb"},
+	},
 	cacturne: {
 		inherit: true,
+		abilities: {0: "Sand Veil", 1:"Arena Trap", H: "Water Absorb"},
 		otherFormes: ["Cacturne-Mega-X", "Cacturne-Mega-Y-Day", "Cacturne-Mega-Y-Night"],
         formeOrder: ["Cacturne", "Cacturne-Mega-X", "Cacturne-Mega-Y-Day", "Cacturne-Mega-Y-Night"],
 	},
@@ -1949,6 +1962,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	darmanitanzen: {
 		inherit: true,
+		baseStats: {hp: 105, atk: 30, def: 105, spa: 140, spd: 105, spe: 55},
 	},
 	darmanitangalar: {
 		inherit: true,
@@ -4213,7 +4227,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Dragon", "Dark"],
 		gender: "N",
 		baseStats: {hp: 105, atk: 139, def: 71, spa: 55, spd: 101, spe: 119},
-		abilities: {0: "Protosynthesis", H: "Aerilate"},
+		abilities: {0: "Protosynthesis", H: "Anger Point"},
 		heightm: 2,
 		weightkg: 380,
 		color: "Green",

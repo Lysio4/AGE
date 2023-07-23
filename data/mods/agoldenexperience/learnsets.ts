@@ -4505,6 +4505,8 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			zenheadbutt: ["8M", "8L30"],
 			return: ["8M"],
 			frustration: ["8M"],
+			stealthrock: ["8M"],
+			whirlwind: ["8M"],
 		},
 	},
 	taurospaldeablaze: {
@@ -4561,6 +4563,8 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			zenheadbutt: ["8M", "8L30"],
 			return: ["8M"],
 			frustration: ["8M"],
+			stealthrock: ["8M"],
+			whirlwind: ["8M"],
 		},
 	},
 	taurospaldeaaqua: {
@@ -4615,6 +4619,8 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			zenheadbutt: ["8M", "8L30"],
 			return: ["8M"],
 			frustration: ["8M"],
+			stealthrock: ["8M"],
+			whirlwind: ["8M"],
 		},
 	},
 	walkingwake: {

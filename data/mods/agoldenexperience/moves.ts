@@ -3473,7 +3473,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 	ragingbull: {
 		num: 873,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 120,
 		category: "Physical",
 		name: "Raging Bull",
 		shortDesc: "Destroys screens. Type depends on user's form.",
