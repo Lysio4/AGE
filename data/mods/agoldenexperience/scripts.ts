@@ -342,6 +342,9 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'rapidash').learnset.backfire = ['8L1'];
     
     // highwater 
+    this.modData('Learnsets', 'squirtle').learnset.highwater = ['8T'];
+    this.modData('Learnsets', 'wartortle').learnset.highwater = ['8T'];
+    this.modData('Learnsets', 'blastoise').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'poliwrath').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'dewgong').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'vaporeon').learnset.highwater = ['8T'];
@@ -832,6 +835,12 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     //New movepool changes :
 
     //gen 1: 
+    delete this.modData('Learnsets', 'squirtle').learnset.shellsmash;
+    delete this.modData('Learnsets', 'wartortle').learnset.shellsmash;
+    delete this.modData('Learnsets', 'blastoise').learnset.shellsmash;
+    this.modData('Learnsets', 'squirtle').learnset.calmmind = ['8L1'];
+    this.modData('Learnsets', 'wartortle').learnset.calmmind = ['8L1'];
+    this.modData('Learnsets', 'blastoise').learnset.calmmind = ['8L1'];
     this.modData('Learnsets', 'pidgeot').learnset.focusblast = ['8L1'];
     this.modData('Learnsets', 'spearow').learnset.bravebird = ['8L1'];
     this.modData('Learnsets', 'arbok').learnset.meanlook = ['8L1'];

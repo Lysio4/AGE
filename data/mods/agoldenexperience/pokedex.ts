@@ -5,10 +5,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	//Vanilla mons (+ custom megas and regional forms) :
 
 	//gen 1 :
-	blastoisemega: {
-		inherit: true,
-		abilities: {0: "Battle Armor"},
-	},
 	butterfree: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 40, def: 50, spa: 90, spd: 80, spe: 75},
