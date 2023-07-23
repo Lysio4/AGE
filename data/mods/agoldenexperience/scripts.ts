@@ -966,6 +966,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'whismur').learnset.sonicboom = ['8L1'];
     this.modData('Learnsets', 'makuhita').learnset.drainpunch = ['8L1'];
     this.modData('Learnsets', 'hariyama').learnset.machpunch = ['8L1'];
+    this.modData('Learnsets', 'hariyama').learnset.courtchange = ['8L1'];
     this.modData('Learnsets', 'delcatty').learnset.slackoff = ['8L1'];
     this.modData('Learnsets', 'wailord').learnset.flipturn = ['8L1'];
     this.modData('Learnsets', 'wailord').learnset.slackoff = ['8L1'];
