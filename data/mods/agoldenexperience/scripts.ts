@@ -1,6 +1,4 @@
 export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
-  /*inherit: 'gen9',
-  gen: 9,*/
   canMegaEvo(pokemon) {
 		const altForme = pokemon.baseSpecies.otherFormes && this.dex.getSpecies(pokemon.baseSpecies.otherFormes[0]);
 		const item = pokemon.getItem();
@@ -37,10 +35,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 		return item.megaStone;
 	},
 
-    //inherit: 'gen8',
-    //gen: 8,
-    //init: function() {
-
       init() {
         //stolen from optimons x
         const addNewMoves = (pokemonid: string, moveids: string[]) => {
@@ -72,8 +66,6 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
         addNewMoves('weavile',['trailblaze']);
         addNewMoves('wigglytuff',['trailblaze']);
     
-    
-        //addNewMoves('wigglytuff', ['nastyplot']);
         addNewMoves('dugtrio', ['swordsdance']);
         addNewMoves('dugtrioalola', ['swordsdance']);
         addNewMoves('golduck', ['nastyplot', "powergem"]);
@@ -1317,6 +1309,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'hatterene').learnset.moonblast = ['8L1'];
     this.modData('Learnsets', 'hatterene').learnset.teleport = ['8L1'];
     this.modData('Learnsets', 'hatterene').learnset.moonlight = ['8L1'];
+    this.modData('Learnsets', 'grimmsnarl').learnset.partingshot = ['8L1'];
     this.modData('Learnsets', 'obstagoon').learnset.pursuit = ['8L1'];
     this.modData('Learnsets', 'perrserker').learnset.bulletpunch = ['8L1'];
     this.modData('Learnsets', 'cursola').learnset.trickroom = ['8L1'];

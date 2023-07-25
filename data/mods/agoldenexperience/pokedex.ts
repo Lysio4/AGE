@@ -160,17 +160,17 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 62, def: 78, spa: 105, spd: 80, spe: 95},
 		abilities: {0: "Neuroforce", 1: "Cloud Nine", H: "Swift Swim"},
 	},
-	primeape: {//to remove when gen 9
+	primeape: {
 		inherit: true,
 		//abilities: {0: "Gorilla Tactics", 1: "Anger Point", H: "Defiant"},
 		evos: ["Annihilape"],
 	},
-	growlithe: {//to remove when gen 9
+	growlithe: {
 		inherit: true,
 		otherFormes: ["Growlithe-Hisui"],
 		formeOrder: ["Growlithe", "Growlithe-Hisui"],
 	},
-	growlithehisui: {//to remove when gen 9
+	growlithehisui: {
 		num: 58,
 		name: "Growlithe-Hisui",
 		baseSpecies: "Growlithe",
@@ -188,10 +188,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	arcanine: {
 		inherit: true,
 		baseStats: {hp: 90, atk: 115, def: 90, spa: 75, spd: 90, spe: 95},
-		otherFormes: ["Arcanine-Hisui"],//to remove when gen 9
-		formeOrder: ["Arcanine", "Arcanine-Hisui"],//to remove when gen 9
+		otherFormes: ["Arcanine-Hisui"],
+		formeOrder: ["Arcanine", "Arcanine-Hisui"],
 	},
-	arcaninehisui: {//to remove when gen 9
+	arcaninehisui: {
 		num: 59,
 		name: "Arcanine-Hisui",
 		baseSpecies: "Arcanine",
@@ -324,10 +324,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	voltorb: {
 		inherit: true,
 		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
-		otherFormes: ["Voltorb-Hisui"],//to remove when gen 9
-		formeOrder: ["Voltorb", "Voltorb-Hisui"],//to remove when gen 9
+		otherFormes: ["Voltorb-Hisui"],
+		formeOrder: ["Voltorb", "Voltorb-Hisui"],
 	},
-	voltorbhisui: {//to remove when gen 9
+	voltorbhisui: {
 		num: 100,
 		name: "Voltorb-Hisui",
 		baseSpecies: "Voltorb",
@@ -346,10 +346,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 60, atk: 80, def: 70, spa: 50, spd: 80, spe: 150},
 		abilities: {0: "Soundproof", 1: "Explosive", H: "Aftermath"},
-		otherFormes: ["Electrode-Hisui"],//to remove when gen 9
-		formeOrder: ["Electrode", "Electrode-Hisui"],//to remove when gen 9
+		otherFormes: ["Electrode-Hisui"],
+		formeOrder: ["Electrode", "Electrode-Hisui"],
 	},
-	electrodehisui: {//to remove when gen 9
+	electrodehisui: {
 		num: 101,
 		name: "Electrode-Hisui",
 		baseSpecies: "Electrode",
@@ -573,7 +573,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		otherFormes: ["Typhlosion-Hisui", "Typhlosion-Mega"],
 		formeOrder: ["Typhlosion", "Typhlosion-Hisui", "Typhlosion-Mega"],
 	},
-	typhlosionhisui: {//to remove when gen 9
+	typhlosionhisui: {
 		num: 157,
 		name: "Typhlosion-Hisui",
 		baseSpecies: "Typhlosion",
@@ -616,7 +616,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Mega",
 		types: ["Water", "Dark"],
 		genderRatio: {M: 0.875, F: 0.125},
-		baseStats: {hp: 85, atk: 120, def: 120, spa: 119, spd: 118, spe: 68},
+		baseStats: {hp: 85, atk: 130, def: 120, spa: 99, spd: 118, spe: 78},
 		abilities: {0: "Stakeout"},
 		heightm: 2.3,
 		weightkg: 88.8,
@@ -754,10 +754,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	qwilfish: {
 		inherit: true,
 		baseStats: {hp: 85, atk: 95, def: 85, spa: 55, spd: 85, spe: 85},
-		otherFormes: ["Qwilfish-Hisui"],//to remove when gen 9
-		formeOrder: ["Qwilfish", "Qwilfish-Hisui"],//to remove when gen 9
+		otherFormes: ["Qwilfish-Hisui"],
+		formeOrder: ["Qwilfish", "Qwilfish-Hisui"],
 	},
-	qwilfishhisui: {//to remove when gen 9
+	qwilfishhisui: {
 		num: 211,
 		name: "Qwilfish-Hisui",
 		baseSpecies: "Qwilfish",
@@ -803,12 +803,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		battleOnly: "Scizor-Galar",
 		requiredItem: "Scizorite",
 	},
-	sneasel: {//to remove when gen 9
+	sneasel: {
 		inherit: true,
 		otherFormes: ["Sneasel-Hisui"],
 		formeOrder: ["Sneasel", "Sneasel-Hisui"],
 	},
-	sneaselhisui: {//to remove when gen 9
+	sneaselhisui: {
 		num: 215,
 		name: "Sneasel-Hisui",
 		baseSpecies: "Sneasel",
@@ -826,7 +826,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 90, atk: 130, def: 75, spa: 55, spd: 75, spe: 75},
 		abilities: {0: "Guts", 1: "Quick Feet", H: "Honey Gather"},
-		evos: ["Ursaluna"],//to remove when gen 9
+		evos: ["Ursaluna"],
 	},
 	// slugma: {
 	// 	inherit: true,
@@ -1889,10 +1889,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	lilligant: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 60, def: 75, spa: 110, spd: 75, spe: 100},
-		otherFormes: ["Lilligant-Hisui"],//to remove when gen 9
-		formeOrder: ["Lilligant", "Lilligant-Hisui"],//to remove when gen 9
+		otherFormes: ["Lilligant-Hisui"],
+		formeOrder: ["Lilligant", "Lilligant-Hisui"],
 	},
-	lilliganthisui: {//to remove when gen 9
+	lilliganthisui: {
 		num: 549,
 		name: "Lilligant-Hisui",
 		baseSpecies: "Lilligant",
@@ -1912,14 +1912,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	basculin: {
 		inherit: true,
 		types: ["Water", "Fighting"],
-		otherFormes: ["Basculin-Blue-Striped", "Basculin-White-Striped"],//to remove when gen 9
-		formeOrder: ["Basculin", "Basculin-Blue-Striped", "Basculin-White-Striped"],//to remove when gen 9
+		otherFormes: ["Basculin-Blue-Striped", "Basculin-White-Striped"],
+		formeOrder: ["Basculin", "Basculin-Blue-Striped", "Basculin-White-Striped"],
 	},
 	basculinbluestriped: {
 		inherit: true,
 		types: ["Water", "Fighting"],
 	},
-	basculinwhitestriped: {//to remove when gen 9
+	basculinwhitestriped: {
 		num: 550,
 		name: "Basculin-White-Striped",
 		baseSpecies: "Basculin",
@@ -2018,12 +2018,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 60, def: 82, spa: 95, spd: 82, spe: 75},
 		abilities: {0: "Stench", 1: "Weak Armor", H: "Huge Power"},
 	},
-	zorua: {//to remove when gen 9
+	zorua: {
 		inherit: true,
 		otherFormes: ["Zorua-Hisui"],
 		formeOrder: ["Zorua", "Zorua-Hisui"],
 	},
-	zoruahisui: {//to remove when gen 9
+	zoruahisui: {
 		num: 570,
 		name: "Zorua-Hisui",
 		baseSpecies: "Zorua",
@@ -2044,7 +2044,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
         otherFormes: ["Zoroark-Hisui", "Zoroark-Mega"],
         formeOrder: ["Zoroark", "Zoroark-Hisui", "Zoroark-Mega"],
     },
-	zoroarkhisui: {//to remove when gen 9
+	zoroarkhisui: {
 		num: 571,
 		name: "Zoroark-Hisui",
 		baseSpecies: "Zoroark",
@@ -2185,10 +2185,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	braviary: {
 		inherit: true,
 		types: ["Fighting", "Flying"],
-		otherFormes: ["Braviary-Hisui"],//to remove when gen 9
-		formeOrder: ["Braviary", "Braviary-Hisui"],//to remove when gen 9
+		otherFormes: ["Braviary-Hisui"],
+		formeOrder: ["Braviary", "Braviary-Hisui"],
 	},
-	braviaryhisui: {//to remove when gen 9
+	braviaryhisui: {
 		num: 628,
 		name: "Braviary-Hisui",
 		baseSpecies: "Braviary",
@@ -2432,10 +2432,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	sliggoo: {
 		inherit: true,
 		types: ["Dragon", "Poison"],
-		otherFormes: ["Sliggoo-Hisui"],//to remove when gen 9
-		formeOrder: ["Sliggoo", "Sliggoo-Hisui"],//to remove when gen 9
+		otherFormes: ["Sliggoo-Hisui"],
+		formeOrder: ["Sliggoo", "Sliggoo-Hisui"],
 	},
-	sliggoohisui: {//to remove when gen 9
+	sliggoohisui: {
 		num: 705,
 		name: "Sliggoo-Hisui",
 		baseSpecies: "Sliggoo",
@@ -2454,10 +2454,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	goodra: {
 		inherit: true,
 		types: ["Dragon", "Poison"],
-		otherFormes: ["Goodra-Hisui"],//to remove when gen 9
-		formeOrder: ["Goodra", "Goodra-Hisui"],//to remove when gen 9
+		otherFormes: ["Goodra-Hisui"],
+		formeOrder: ["Goodra", "Goodra-Hisui"],
 	},
-	goodrahisui: {//to remove when gen 9
+	goodrahisui: {
 		num: 706,
 		name: "Goodra-Hisui",
 		baseSpecies: "Goodra",
@@ -2478,39 +2478,39 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	pumpkaboo: {
 		inherit: true,
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	pumpkaboosmall: {
 		inherit: true,
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	pumpkaboolarge: {
 		inherit: true,
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	pumpkaboosuper: {
 		inherit: true,
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	gourgeist: {
 		inherit: true,
 		baseStats: {hp: 65, atk: 90, def: 122, spa: 45, spd: 88, spe: 84},
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	gourgeistsmall: {
 		inherit: true,
 		baseStats: {hp: 55, atk: 85, def: 122, spa: 45, spd: 88, spe: 99},
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	gourgeistlarge: {
 		inherit: true,
 		baseStats: {hp: 75, atk: 95, def: 122, spa: 45, spd: 88, spe: 69},
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	gourgeistsuper: {
 		inherit: true,
 		baseStats: {hp: 85, atk: 100, def: 122, spa: 45, spd: 88, spe: 54},
-		abilities: {0: "Pickup", 1: "Frisk", H: "Flash Fire"},
+		abilities: {0: "Night Light", 1: "Frisk", H: "Flash Fire"},
 	},
 	bergmite: {
 		inherit: true,
@@ -2520,10 +2520,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		types: ["Ice", "Water"],
 		abilities: {0: "Refrigerate", 1: "Ice Body", H: "Sturdy"},
-		otherFormes: ["Avalugg-Hisui"],//to remove when gen 9
-		formeOrder: ["Avalugg", "Avalugg-Hisui"],//to remove when gen 9
+		otherFormes: ["Avalugg-Hisui"],
+		formeOrder: ["Avalugg", "Avalugg-Hisui"],
 	},
-	avalugghisui: {//to remove when gen 9
+	avalugghisui: {
 		num: 713,
 		name: "Avalugg-Hisui",
 		baseSpecies: "Avalugg",
@@ -2588,17 +2588,17 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 
 	//gen 7 :
-	dartrix: {//to remove when gen 9
+	dartrix: {
 		inherit: true,
 		evos: ["Decidueye", "Decidueye-Hisui"],
 	},
 	decidueye: {
 		inherit: true,
 		baseStats: {hp: 78, atk: 107, def: 85, spa: 70, spd: 100, spe: 90},
-		otherFormes: ["Decidueye-Hisui"],//to remove when gen 9
-		formeOrder: ["Decidueye", "Decidueye-Hisui"],//to remove when gen 9
+		otherFormes: ["Decidueye-Hisui"],
+		formeOrder: ["Decidueye", "Decidueye-Hisui"],
 	},
-	decidueyehisui: {//to remove when gen 9
+	decidueyehisui: {
 		num: 724,
 		name: "Decidueye-Hisui",
 		baseSpecies: "Decidueye",
@@ -3246,9 +3246,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 77, atk: 70, def: 95, spa: 136, spd: 103, spe: 29},
 	},
-	grimmsnarl: {//to remove when gen 9
+	grimmsnarl: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 120, def: 75, spa: 75, spd: 85, spe: 60},
+		abilities: {0: "Prankster", 1: "Frisk", H: "Fur Coat"},
 	},
 	obstagoon: {
 		inherit: true,
@@ -3326,15 +3327,15 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 80, atk: 45, def: 125, spa: 130, spd: 60, spe: 95},
 		abilities: {0: "Light Metal", 1: "Clear Body", H: "Stalwart"},
 	},
-	/*zacian: {//to remove when gen 9
+	/*zacian: {
 		inherit: true,
 		baseStats: {hp: 92, atk: 115, def: 115, spa: 115, spd: 115, spe: 118},
 	},
-	zaciancrowned: {//to remove when gen 9
+	zaciancrowned: {
 		inherit: true,
 		baseStats: {hp: 92, atk: 145, def: 100, spa: 145, spd: 100, spe: 138},
 	},
-	zamazenta: {//to remove when gen 9
+	zamazenta: {
 		inherit: true,
 		baseStats: {hp: 92, atk: 115, def: 115, spa: 115, spd: 115, spe: 118},
 	},*/
@@ -3372,7 +3373,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 100, atk: 85, def: 85, spa: 165, spd: 100, spe: 145},
 	},
-	wyrdeer: {//to remove when gen 9
+	wyrdeer: {
 		num: 899,
 		name: "Wyrdeer",
 		types: ["Normal", "Psychic"],
@@ -3390,7 +3391,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		abilities: {0: "Intimidate", 1: "Fur Coat", H: "Sap Sipper"},
 	},*/
-	kleavor: {//to remove when gen 9
+	kleavor: {
 		num: 900,
 		name: "Kleavor",
 		types: ["Bug", "Rock"],
@@ -3404,7 +3405,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "Black Augurite",
 		eggGroups: ["Bug"],
 	},
-	ursaluna: {//to remove when gen 9
+	ursaluna: {
 		num: 901,
 		name: "Ursaluna",
 		types: ["Normal", "Ground"],
@@ -3418,7 +3419,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "Peat Block when there's a full moon",
 		eggGroups: ["Field"],
 	},
-	basculegion: {//to remove when gen 9
+	basculegion: {
 		num: 902,
 		name: "Basculegion",
 		baseForme: "M",
@@ -3436,7 +3437,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		otherFormes: ["Basculegion-F"],
 		formeOrder: ["Basculegion", "Basculegion-F"],
 	},
-	basculegionf: {//to remove when gen 9
+	basculegionf: {
 		num: 902,
 		name: "Basculegion-F",
 		baseSpecies: "Basculegion",
@@ -3453,7 +3454,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "Receive 294+ recoil without fainting",
 		eggGroups: ["Water 2"],
 	},
-	sneasler: {//to remove when gen 9
+	sneasler: {
 		num: 903,
 		name: "Sneasler",
 		types: ["Fighting", "Poison"],
@@ -3468,7 +3469,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "during the day",
 		eggGroups: ["Field"],
 	},
-	overqwil: {//to remove when gen 9
+	overqwil: {
 		num: 904,
 		name: "Overqwil",
 		types: ["Dark", "Poison"],
@@ -3482,7 +3483,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "Use Strong style Barb Barrage 20 times",
 		eggGroups: ["Water 2"],
 	},
-	enamorus: {//to remove when gen 9
+	enamorus: {
 		num: 905,
 		name: "Enamorus",
 		baseForme: "Incarnate",
@@ -3497,7 +3498,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		otherFormes: ["Enamorus-Therian"],
 		formeOrder: ["Enamorus", "Enamorus-Therian"],
 	},
-	enamorustherian: {//to remove when gen 9
+	enamorustherian: {
 		num: 905,
 		name: "Enamorus-Therian",
 		baseSpecies: "Enamorus",

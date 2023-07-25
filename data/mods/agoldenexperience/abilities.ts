@@ -1,9 +1,7 @@
 import { consoleips } from "../../../config/config-example";
 
-// const bladeMoves = ['aerialace', 'airslash', 'aircutter', 'behemothblade', 'crosspoison', 'cut', 'falseswipe', 'furycutter', 'leafblade', 'nightslash', 'psychocut', 'razorshell', 'razorwind', 'sacredsword', 'secretsword', 'slash', 'xscissor', 'solarblade', 'ceaselessedge', 'sneakyassault', 'braveblade', 'bitterblade'];
 const kickMoves = ['jumpkick', 'highjumpkick', 'megakick', 'doublekick', 'blazekick', 'tropkick', 'lowkick', 'lowsweep', 'rollingkick', 'triplekick', 'stomp', 'highhorsepower', 'tripleaxel', 'stompingtantrum', 'thunderouskick', 'axekick'];
 const tailMoves = ['firelash', 'powerwhip', 'tailslap', 'wrap', 'constrict', 'irontail', 'dragontail', 'poisontail', 'aquatail', 'vinewhip', 'wringout',];
-// const windMoves = ['aircutter', 'blizzard', 'fairywind', 'gust', 'heatwave', 'hurricane', 'icywind', 'petalblizzard', 'sandstorm', 'tailwind', 'twister', 'whirlwind'];
 
 export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 	poisonousradula: {
@@ -1907,41 +1905,36 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 				pokemon.formeChange(forme, this.effect, false, '[msg]');
 			}
 		},
-		onModifyTypePriority: -1,
-		onModifyType(move, pokemon) {
-			const noModifyType = [
-				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-			];
-			if (move.type === 'Normal' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
-				switch (pokemon.effectiveWeather()) {
-					case 'sunnyday':
-					case 'desolateland':
-						move.type = 'Fire';
-						move.forecastBoosted = true;
+		onPrepareHit(source, target, move) {
+			if (move.hasBounced) return;
+			const type = move.type;
+			if (type) {
+				switch (type) {
+					case "Water":
+						this.field.setWeather('raindance');	
+						if (!source.setType(type)) return;
+						this.add('-start', source, 'typechange', type, '[from] ability: Forecast');
 						break;
-					case 'raindance':
-					case 'primordialsea':
-						move.type = 'Water';
-						move.forecastBoosted = true;
+					case "Fire":
+						this.field.setWeather('sunnyday');	
+						if (!source.setType(type)) return;
+						this.add('-start', source, 'typechange', type, '[from] ability: Forecast');
 						break;
-					case 'hail':
-						move.type = 'Ice';
-						move.forecastBoosted = true;
+					case "Ice":
+						this.field.setWeather('hail');	
+						if (!source.setType(type)) return;
+						this.add('-start', source, 'typechange', type, '[from] ability: Forecast');
 						break;
-					default:
-						break;
+					
 				}
 			}
 		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (move.forecastBoosted) return this.chainModify([0x1333, 0x1000]);
-		},
 		name: "Forecast",
-		shortDesc: "Castform's type and Normal type moves change to the current weather condition's type, except Sandstorm.",
-		rating: 2,
+		desc: "Castform's type changes to the current weather condition's type, except Sandstorm. Upon using a Water, Fire, or Ice move, this Pokemon changes to that type and sets the corresponding weather.",
+		shortDesc: "Changes type, form and weather when using Water/Fire/Ice moves.",
+		rating: 4,
 		num: 59,
-	},
+    },
 	mimicry: {
 		onStart(pokemon) {
 			if (this.field.terrain) {
