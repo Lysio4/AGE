@@ -314,26 +314,26 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 4,
 		num: -16,
 	},*/
-	// mistymountain: { //unused due to deleted Fakemons
-	// 	onModifyTypePriority: -1,
-	// 	onModifyType(move, pokemon) {
-	// 		const noModifyType = [
-	// 			'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
-	// 		];
-	// 		if (move.type === 'Rock' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
-	// 			move.type = 'Ice';
-	// 			move.refrigerateBoosted = true;
-	// 		}
-	// 	},
-	// 	onBasePowerPriority: 23,
-	// 	onBasePower(basePower, pokemon, target, move) {
-	// 		if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
-	// 	},
-	// 	name: "Misty Mountain",
-	// 	shortDesc: "This Pokemon's Rock-type moves become Ice-type and have 1.2x power.",
-	// 	rating: 4,
-	// 	num: -17,
-	// },
+	mistymountain: { 
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Rock' && !noModifyType.includes(move.id) && !(move.isZ && move.category !== 'Status')) {
+				move.type = 'Ice';
+				move.refrigerateBoosted = true;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.refrigerateBoosted) return this.chainModify([0x1333, 0x1000]);
+		},
+		name: "Misty Mountain",
+		shortDesc: "This Pokemon's Rock-type moves become Ice-type and have 1.2x power.",
+		rating: 4,
+		num: -17,
+	},
 	coldwind: {
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
