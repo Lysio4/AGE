@@ -23,6 +23,9 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     else if (item.name === "Typhlosionite" && pokemon.baseSpecies.name === "Typhlosion-Hisui") {
 			return null;
 		}
+    else if (item.name === "Magcargonite" && pokemon.baseSpecies.name === "Magcargo-Sinnoh") {
+			return null;
+		}
     else if (item.name === "Meteor Fragment" && pokemon.baseSpecies.name === "Rayquaza") {
 			return "Rayquaza-Mega";
 		}

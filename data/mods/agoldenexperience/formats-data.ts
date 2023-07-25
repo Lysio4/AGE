@@ -4905,16 +4905,16 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "OU",
 		doublesTier: "DOU",
 	},
-	// slugmasinnoh: {
-	// 	tier: "LC",
-	// },
-	// magcargosinnoh: {
-	// 	tier: "NFE",
-	// },
-	// leechuption: {
-	// 	tier: "RU",
-	// 	doublesTier: "DOU",
-	// },	
+	slugmasinnoh: {
+		tier: "LC",
+	},
+	magcargosinnoh: {
+		tier: "NFE",
+	},
+	leechuption: {
+		tier: "UU",
+		doublesTier: "DOU",
+	},	
 	delistmas: {
 		tier: "UU",
 		doublesTier: "DOU",
