@@ -4776,14 +4776,14 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 	},
 	sharkutkie: {
-		tier: "UU",
+		tier: "RU",
 		doublesTier: "DOU",
 	},
 	mercurino: {
         tier: "LC",
     },
 	dauvifar: {
-        tier: "UU",
+        tier: "RU",
         doublesTier: "DOU",
     },
 	girafatak: { 
