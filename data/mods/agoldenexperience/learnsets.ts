@@ -2232,6 +2232,7 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			xscissor: ["8M"],
 			return: ["8M"],
 			frustration: ["8M"],
+			highjumpkick: ["8M"],
 		},
 	},
 	capsakid: {
