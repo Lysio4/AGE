@@ -1283,6 +1283,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		abilities: {0: "Shadow Tag", 1: "Frisk", H: "Cursed Body"},
 	},
+	banettemega: {
+		inherit: true,
+		baseStats: {hp: 64, atk: 145, def: 75, spa: 123, spd: 83, spe: 65},
+	},
 	duskull: {
 		inherit: true,
 		abilities: {0: "Levitate", 1: "Shadow Tag", H: "Frisk"},
@@ -1773,9 +1777,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 60, atk: 85, def: 69, spa: 80, spd: 69, spe: 87},
 	},
+	purrloin: {
+		inherit: true,
+		abilities: {0: "Racketeering", 1: "Unburden", H: "Prankster"},
+	},
 	liepard: {
 		inherit: true,
 		baseStats: {hp: 74, atk: 108, def: 60, spa: 58, spd: 60, spe: 120},
+		abilities: {0: "Racketeering", 1: "Unburden", H: "Prankster"},
 	},
 	simisage: {
 		inherit: true,
@@ -3141,9 +3150,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		abilities: {0: "Neuroforce", 1: "Regenerator", H: "Psychic Surge"},
 	},
+	nickit: {
+		inherit: true,
+		abilities: {0: "Racketeering", 1: "Unburden", H: "Stakeout"},
+	},
 	thievul: {
 		inherit: true,
 		baseStats: {hp: 70, atk: 58, def: 58, spa: 102, spd: 92, spe: 100},
+		abilities: {0: "Sleight of Hand", 1: "Unburden", H: "Stakeout"},
 	},
 	eldegoss: {
 		inherit: true,

@@ -1359,6 +1359,19 @@ export const Abilities: { [abilityid: string]: ModdedAbilityData; } = {
 		rating: 2.5,
 		num: -1160,
 	},
+	sleightofhand: {
+		desc: "This Pokémon's contact moves become special attacks and do not make contact with the target.",
+		shortDesc: "This Pokémon's contact moves become special and non-contact.",
+		onModifyMove(move) {
+			if (move.flags['contact']) {
+				if (move.category !== 'Special') move.category = 'Special';
+				delete move.flags['contact'];
+			}
+		},
+		name: "Sleight of Hand",
+		rating: 3,
+		num: -52,
+	},
 	newtonslaw: {
 		onModifySpe(spe, pokemon) {
 			if (this.field.getPseudoWeather('gravity')) {
