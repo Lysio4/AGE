@@ -741,6 +741,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evos: ["Farigiraf", "Girafatak"],
 		abilities: {0: "Inner Focus", 1: "Early Bird", H: "Neuroforce"},
 	},
+	steelixmega: {
+		inherit: true,
+		abilities: {0: "Earth Eater"},
+	},
 	granbull: {
 		inherit: true,
 		types: ["Fairy", "Dark"],

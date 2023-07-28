@@ -604,11 +604,11 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	steelix: {
-		tier: "RU",
+		tier: "NU",
 		doublesTier: "(DUU)",
 	},
 	steelixmega: {
-		tier: "RU",
+		tier: "UU",
 		doublesTier: "DUU",
 	},
 	drowzee: {
