@@ -2407,12 +2407,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	tyrunt: {
 		inherit: true,
 		baseStats: {hp: 58, atk: 89, def: 77, spa: 35, spd: 45, spe: 58},
-		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Sturdy"},
+		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Rock Head"},
 	},
 	tyrantrum: {
 		inherit: true,
 		baseStats: {hp: 82, atk: 121, def: 119, spa: 59, spd: 59, spe: 81},
-		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Sturdy"},
+		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Rock Head"},
 	},
 	amaura: {
 		inherit: true,
