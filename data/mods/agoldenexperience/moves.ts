@@ -1749,7 +1749,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		category: "Special",
 		shortDesc: "-1 SpA/SpD to target.",
 		name: "Glitzy Glow",
-		pp: 24,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1},
 		boosts: {
@@ -1768,7 +1768,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		category: "Special",
 		shortDesc: "-1 Atk/Def to target.",
 		name: "Baddy Bad",
-		pp: 24,
+		pp: 15,
 		priority: 0,
 		flags: {protect: 1},
 		boosts: {
