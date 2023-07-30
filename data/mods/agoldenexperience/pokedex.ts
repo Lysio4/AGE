@@ -1083,7 +1083,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		name: "Volbeat-Mega",
 		baseSpecies: "Volbeat",
 		forme: "Mega",
-		types: ["Bug", "Psychic"],
+		types: ["Bug", "Electric"],
 		gender: "M",
 		baseStats: {hp: 65, atk: 130, def: 50, spa: 130, spd: 50, spe: 105},
 		abilities: {0: "Infiltrator"},
