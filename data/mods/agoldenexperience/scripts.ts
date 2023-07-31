@@ -1114,6 +1114,22 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'giratina').learnset.teleport = ['8L1'];
     this.modData('Learnsets', 'phione').learnset.takeheart = ['8L1'];
     this.modData('Learnsets', 'manaphy').learnset.takeheart = ['8L1'];
+    this.modData("Learnsets", "arceus").learnset.healingwish = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.hydropump = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.taunt = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.imprison = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.bulkup = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.dragondance = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.flareblitz = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.powergem = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.gunkshot = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.heavyslam = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.foulplay = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.storedpower = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.hex = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.hurricane = ["8L1"];
+		this.modData("Learnsets", "arceus").learnset.bodypress = ["8L1"];
+
 
     //gen 5:
     this.modData('Learnsets', 'serperior').learnset.mudshot = ['8L1'];
