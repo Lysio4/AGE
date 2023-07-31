@@ -1166,6 +1166,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'maractus').learnset.sandattack = ['8L1'];
     this.modData('Learnsets', 'crustle').learnset.crabhammer = ['8L1'];
     this.modData('Learnsets', 'crustle').learnset.brickbreak = ['8L1'];
+    this.modData('Learnsets', 'crustle').learnset.painsplit = ['8L1'];
     this.modData('Learnsets', 'scrafty').learnset.gunkshot = ['8L1'];
     this.modData('Learnsets', 'sigilyph').learnset.hurricane = ['8L1'];
     this.modData('Learnsets', 'sigilyph').learnset.focusblast = ['8L1'];
