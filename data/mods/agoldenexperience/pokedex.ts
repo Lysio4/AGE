@@ -2407,7 +2407,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	tyrunt: {
 		inherit: true,
 		baseStats: {hp: 58, atk: 89, def: 77, spa: 35, spd: 45, spe: 58},
-		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Rock Head"},
+		abilities: {0: "Strong Jaw", 1: "Solid Rock", H: "Sturdy"},
 	},
 	tyrantrum: {
 		inherit: true,
@@ -2431,7 +2431,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	carbink: {
 		inherit: true,
-		abilities: {0: "Clear Body", 1: "Night Light", H: "Huge Power"},
+		abilities: {0: "Clear Body", 1: "Night Light", H: "Sturdy"},
 	},
 	goomy: {
 		inherit: true,

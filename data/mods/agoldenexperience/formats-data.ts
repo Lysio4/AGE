@@ -1209,6 +1209,10 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	girafarig: {
 		tier: "LC",
 	},
+	farigiraf: {
+		tier: "NU",
+		doublesTier: "(DUU)",
+	},
 	pineco: {
 		tier: "LC",
 	},
