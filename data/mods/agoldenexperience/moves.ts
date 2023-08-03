@@ -64,6 +64,7 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 			}
 		},
 		secondary: null,
+		shortDesc: "1.5x damage if foe holds an item. Removes item. Heals 1/10 of max HP.",
 		target: "normal",
 		type: "Flying",
 		contestType: "Tough",
@@ -704,6 +705,29 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Water",
 		zMove: {effect: 'clearnegativeboost'},
 		contestType: "Beautiful",
+	},
+	seajaws: {
+		num: -1706,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Sea Jaws",
+		pp: 10,
+		priority: 0,
+		flags: {bite: 1, contact: 1, protect: 1, mirror: 1},
+		onTryHit(pokemon) {
+			// will shatter screens through sub, before you hit
+			if (pokemon.runImmunity('Water')) {
+				pokemon.side.removeSideCondition('reflect');
+				pokemon.side.removeSideCondition('lightscreen');
+				pokemon.side.removeSideCondition('auroraveil');
+			}
+		},
+		secondary: null,
+		shortDesc: "Destroys screens, unless the target is immune to Water.",
+		target: "normal",
+		type: "Water",
+		contestType: "Clever",
 	},
 	parallelcircuit: {
 		num: -2242,

@@ -357,6 +357,23 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'grapploct').learnset.highwater = ['8T'];
     this.modData('Learnsets', 'medidragon').learnset.highwater = ['8T'];
 
+    // seajaws 
+    this.modData('Learnsets', 'dracovish').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'gyarados').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'samurott').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'barraskewda').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'sharpedo').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'bruxish').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'drednaw').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'feraligatr').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'basculin').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'basculegion').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'basculegionf').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'carracosta').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'arctovish').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'huntail').learnset.seajaws = ['8L1'];
+    this.modData('Learnsets', 'relicanth').learnset.seajaws = ['8L1'];
+
     // parallelcircuit 
     this.modData('Learnsets', 'ironhands').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'ironthorns').learnset.parallelcircuit = ['8L1'];
