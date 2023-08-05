@@ -3255,6 +3255,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		eggGroups: ["Bug"],
 		requiredItem: "Centiskorchite Y",
 	},
+	grapploct: {
+		inherit: true,
+		types: ["Fighting", "Water"],
+	},
 	hatterene: {
 		inherit: true,
 		baseStats: {hp: 77, atk: 70, def: 95, spa: 136, spd: 103, spe: 29},
