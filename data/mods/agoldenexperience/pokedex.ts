@@ -223,7 +223,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		forme: "Mega",
 		types: ["Fighting"],
 		genderRatio: {M: 0.75, F: 0.25},
-		baseStats: {hp: 90, atk: 170, def: 100, spa: 65, spd: 105, spe: 75}, 
+		baseStats: {hp: 90, atk: 180, def: 110, spa: 65, spd: 105, spe: 55}, 
 		abilities: {0: "Limber"},
 		heightm: 1.6,
 		weightkg: 130,
@@ -1871,6 +1871,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	throh: {
 		inherit: true,
 		baseStats: {hp: 120, atk: 100, def: 95, spa: 30, spd: 95, spe: 45},
+		abilities: {0: "Guts", 1: "Stamina", H: "Mold Breaker"},
 	},
 	sawk: {
 		inherit: true,

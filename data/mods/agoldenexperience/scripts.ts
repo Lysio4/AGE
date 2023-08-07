@@ -387,6 +387,24 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'pikachu').learnset.parallelcircuit = ['8L1'];
     this.modData('Learnsets', 'pawmi').learnset.parallelcircuit = ['8L1'];
 
+    // musclecare 
+    this.modData('Learnsets', 'poliwrath').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'machop').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'tyrogue').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'makuhita').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'meditite').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'riolu').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'sawk').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'throh').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'hawlucha').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'passimian').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'buzzwole').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'cinderace').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'kubfu').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'quaquaval').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'mystao').learnset.musclecare = ['8L1'];
+    this.modData('Learnsets', 'tapuwala').learnset.musclecare = ['8L1'];
+
     // dissolution 
     this.modData('Learnsets', 'arbok').learnset.dissolution = ['8T'];
     this.modData('Learnsets', 'grimer').learnset.dissolution = ['8T'];
@@ -1186,6 +1204,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'zebstrika').learnset.jumpkick = ['8L1'];
     this.modData('Learnsets', 'zebstrika').learnset.highhorsepower = ['8L1'];
     this.modData('Learnsets', 'seismitoad').learnset.gunkshot = ['8L1'];
+    this.modData('Learnsets', 'throh').learnset.bodypress = ['8L1'];
     this.modData('Learnsets', 'krookodile').learnset.partingshot = ['8L1'];
     this.modData('Learnsets', 'darmanitan').learnset.recover = ['8L1'];
     this.modData('Learnsets', 'darmanitan').learnset.psyshock = ['8L1'];
