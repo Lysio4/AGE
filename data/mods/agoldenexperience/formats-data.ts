@@ -1233,8 +1233,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	granbull: {
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+		tier: "RU",
 	},
 	qwilfish: {
 		tier: "(PU)",
@@ -1886,8 +1885,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 	},
 	tropius: {
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+		tier: "LC",
 	},
 	chingling: {
 		tier: "LC",
@@ -2966,8 +2964,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	beartic: {
-		tier: "(PU)",
-		doublesTier: "(DUU)",
+		tier: "PU",
 	},
 	cryogonal: {
 		tier: "(PU)",
@@ -3003,8 +3000,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "LC",
 	},
 	golurk: {
-		tier: "NU",
-		doublesTier: "(DUU)",
+		tier: "RU",
 	},
 	pawniard: {
 		tier: "LC",
@@ -5010,6 +5006,22 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 	},
 	raticket: {
 		tier: "UU",
+		doublesTier: "DOU",
+	},
+	golrobot: {
+		tier: "OU",
+		doublesTier: "DOU",
+	},
+	sautropius: {
+		tier: "NU",
+		doublesTier: "DUU",
+	},
+	meltic: {
+		tier: "OU",
+		doublesTier: "DOU",
+	},
+	sithbull: {
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 //unavailable

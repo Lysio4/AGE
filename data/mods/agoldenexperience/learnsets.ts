@@ -8484,4 +8484,36 @@ export const Learnsets: { [speciesid: string]: LearnsetData; } = {
 			nightslash: ["8L1"],
 		},
 	},
+	golrobot: {
+		learnset: {
+			heatcrash: ["8L1"],
+			heavyslam: ["8L1"],
+			bulletpunch: ["8L1"],
+			machpunch: ["8L1"],
+		},
+	},
+	sautropius: {
+		learnset: {
+			acrobatics: ["8L1"],
+		},
+	},
+	meltic: {
+		learnset: {
+			flipturn: ["8L1"],
+			wavecrash: ["8L1"],
+			freezedry: ["8L1"],
+		},
+	},
+	sithbull: {
+		learnset: {
+			howl: ["8L1"],
+			willowisp: ["8L1"],
+			painsplit: ["8L1"],
+			pursuit: ["8L1"],
+			houndshowl: ["8L1"],
+			stealthrocks: ["8L1"],
+			nightmare: ["8L1"],
+			spiritbreak: ["8L1"],
+		},
+	},
 };

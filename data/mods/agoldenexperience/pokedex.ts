@@ -402,7 +402,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	starmie: {
 		inherit: true,
-		abilities: {0: "Illuminate", 1: "Regenerator", H: "Analytic"},
+		abilities: {0: "Illuminate", 1: "Regenerator", H: "Smart Guard"},
 	},
 	mrmime: {
 		inherit: true,
@@ -747,8 +747,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	granbull: {
 		inherit: true,
-		types: ["Fairy", "Dark"],
-		baseStats: {hp: 90, atk: 130, def: 75, spa: 60, spd: 60, spe: 45},
+		evos: ["Sithbull"],
 	},
 	qwilfish: {
 		inherit: true,
@@ -1242,9 +1241,14 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		eggGroups: ["Water 2"],
         requiredItem: "Whiscashite",
 	},
+	baltoy: {
+		inherit: true,
+		abilities: {0: "Levitate", H: "Smart Guard"},
+	},
 	claydol: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 50, def: 105, spa: 70, spd: 120, spe: 75},
+		abilities: {0: "Levitate", H: "Smart Guard"},
 	},
 	cradily: {
 		inherit: true,
@@ -1302,6 +1306,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	chimecho: {
 		inherit: true,
 		baseStats: {hp: 95, atk: 70, def: 105, spa: 135, spd: 120, spe: 75},
+	},
+	tropius: {
+		inherit: true,
+		evos: ["Sautropius"],
 	},
 	absol: {
 		inherit: true,
@@ -1535,6 +1543,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 142, def: 115, spa: 142, spd: 115, spe: 40},
 		abilities: {0: "Everlasting Winter"},
 	},
+	magnezone: {
+		inherit: true,
+		abilities: {0: "Magnet Pull", 1: "Smart Guard", H: "Analytic"},
+	},
 	lickilicky: {
 		inherit: true,
 		types: ["Normal", "Poison"],
@@ -1579,6 +1591,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	probopass: {
 		inherit: true,
 		baseStats: {hp: 60, atk: 50, def: 145, spa: 90, spd: 150, spe: 30},
+		abilities: {0: "Sturdy", 1: "Magnet Pull", H: "Smart Guard"},
 	},
 	dusknoir: {
 		inherit: true,
@@ -2157,6 +2170,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 95, atk: 130, def: 80, spa: 50, spd: 80, spe: 70},
 		abilities: {0: "Icebreaker", 1: "Slush Rush", H: "Swift Swim"},
+		evos: ["Meltic"],
 	},
 	cryogonal: {
 		inherit: true,
@@ -2181,6 +2195,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	golurk: {
 		inherit: true,
 		abilities: {0: "Iron Fist", 1: "Klutz", H: "Invincible"},
+		evos: ["Golrobot"],
 	},
 	bouffalant: {
 		inherit: true,
@@ -2741,7 +2756,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	oranguru: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 50, def: 90, spa: 90, spd: 110, spe: 50},
-		abilities: {0: "Inner Focus", 1: "Neuroforce", H: "Divination"},
+		abilities: {0: "Inner Focus", 1: "Smart Guard", H: "Divination"},
 	},
 	passimian: {
 		inherit: true,
@@ -5248,5 +5263,49 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 50,
 		prevo: "Raticate",
 		eggGroups: ["Field"],
+	},
+	golrobot: {
+		num: 3003,
+		name: "Golrobot",
+		types: ["Ground", "Ghost"],
+		baseStats: {hp: 119, atk: 134, def: 90, spa: 45, spd: 80, spe: 75},
+		abilities: {0: "Iron Fist", 1: "Smart Guard", H: "Invincible"},
+		heightm: 3,
+		weightkg: 999.9,
+		prevo: "Golurk",
+		eggGroups: ["Mineral"],
+	},
+	sautropius: {
+		num: 3004,
+		name: "Sautropius",
+		types: ["Grass", "Flying"],
+		baseStats: {hp: 109, atk: 102, def: 93, spa: 68, spd: 87, spe: 81},
+		abilities: {0: "Chlorophyll", 1: "Ripen", H: "Unburden"},
+		heightm: 3,
+		weightkg: 400,
+		prevo: "Tropius",
+		eggGroups: ["Monster", "Grass"],
+	},
+	meltic: {
+		num: 3005,
+		name: "Meltic",
+		types: ["Ice", "Water"],
+		baseStats: {hp: 100, atk: 135, def: 80, spa: 85, spd: 80, spe: 75},
+		abilities: {0: "Icebreaker", 1: "Slush Rush", H: "Swift Swim"},
+		heightm: 2.8,
+		weightkg: 200,
+		prevo: "Beartic",
+		eggGroups: ["Field"],
+	},
+	sithbull: {
+		num: 3006,
+		name: "Sithbull",
+		types: ["Fairy", "Dark"],
+		baseStats: {hp: 120, atk: 140, def: 90, spa: 60, spd: 75, spe: 45},
+		abilities: {0: "Intimidate", 1: "Shadow Tag", H: "Cursed Body"},
+		heightm: 1.71,
+		weightkg: 123,
+		prevo: "Granbull",
+		eggGroups: ["Field", "Fairy"],
 	},
 }

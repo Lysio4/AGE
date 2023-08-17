@@ -934,6 +934,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
     this.modData('Learnsets', 'seaking').learnset.dragondance = ['8L1'];
     this.modData('Learnsets', 'starmie').learnset.calmmind = ['8L1'];
     this.modData('Learnsets', 'starmie').learnset.futuresight = ['8L1'];
+    this.modData('Learnsets', 'starmie').learnset.storedpower = ['8L1'];
     this.modData('Learnsets', 'pinsir').learnset.megahorn = ['8L1'];
     this.modData('Learnsets', 'vaporeon').learnset.bouncybubble = ['8L1'];
     this.modData('Learnsets', 'jolteon').learnset.buzzybuzz = ['8L1'];
