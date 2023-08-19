@@ -1880,28 +1880,64 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Fairy",
 		contestType: "Clever",
 	},
+	// ragingfury: {
+	// 	num: -1200,
+	// 	accuracy: 100,
+	// 	basePower: 120,
+	// 	category: "Physical",
+	// 	name: "Raging Fury",
+	// 	shortDesc: "Lasts 2-3 turns. Confuses the user afterwards.",
+	// 	pp: 10,
+	// 	priority: 0,
+	// 	flags: {contact: 1, protect: 1, mirror: 1},
+	// 	self: {
+	// 		volatileStatus: 'lockedmove',
+	// 	},
+	// 	onAfterMove(pokemon) {
+	// 		if (pokemon.volatiles['lockedmove'] && pokemon.volatiles['lockedmove'].duration === 1) {
+	// 			pokemon.removeVolatile('lockedmove');
+	// 		}
+	// 	},
+	// 	secondary: null,
+	// 	target: "randomNormal",
+	// 	type: "Fire",
+	// 	contestType: "Cool",
+	// },
 	ragingfury: {
 		num: -1200,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 130,
 		category: "Physical",
 		name: "Raging Fury",
-		shortDesc: "Lasts 2-3 turns. Confuses the user afterwards.",
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1},
-		self: {
-			volatileStatus: 'lockedmove',
-		},
-		onAfterMove(pokemon) {
-			if (pokemon.volatiles['lockedmove'] && pokemon.volatiles['lockedmove'].duration === 1) {
-				pokemon.removeVolatile('lockedmove');
+		basePowerCallback(pokemon, target, move) {
+			let bp = move.basePower;
+			if (pokemon.volatiles['ragingfury'] && pokemon.volatiles['ragingfury'].hitCount) {
+				bp -= 30*pokemon.volatiles['ragingfury'].hitCount;
 			}
+			if (pokemon.status !== 'slp') pokemon.addVolatile('ragingfury');
+			this.debug("Rollout bp: " + bp);
+			return bp;
+		},
+		condition: {
+			duration: 2,
+			onStart() {
+				this.effectData.hitCount = 1;
+			},
+			onRestart() {
+				this.effectData.hitCount++;
+				if (this.effectData.hitCount < 5) {
+					this.effectData.duration = 2;
+				}
+			},
 		},
 		secondary: null,
 		target: "randomNormal",
 		type: "Fire",
 		contestType: "Cool",
+		shortDesc: "This move lowers in power after each use (5 turns max).",
 	},
 	chloroblast: {
 		desc: "This move has 50% recoil. Hits target for at least neutral damages.",
