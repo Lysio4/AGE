@@ -3402,6 +3402,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 100, atk: 65, def: 65, spa: 145, spd: 80, spe: 125},
 	},
+	calyrexice: {
+		inherit: true,
+		types: ["Grass", "Ice"],
+	},
 	calyrexshadow: {
 		inherit: true,
 		baseStats: {hp: 100, atk: 85, def: 85, spa: 165, spd: 100, spe: 145},
@@ -3420,10 +3424,6 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoCondition: "Use Agile style Psyshield Bash 20 times",
 		eggGroups: ["Field"],
 	},
-	/*wyrdeer: {
-		inherit: true,
-		abilities: {0: "Intimidate", 1: "Fur Coat", H: "Sap Sipper"},
-	},*/
 	kleavor: {
 		num: 900,
 		name: "Kleavor",
